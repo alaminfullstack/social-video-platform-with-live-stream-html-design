@@ -1,0 +1,2404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <style id="wp-emoji-styles-inline-css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 0.07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <style id="bp-login-form-style-inline-css">
+        .widget_bp_core_login_widget .bp-login-widget-user-avatar {
+            float: left
+        }
+
+        .widget_bp_core_login_widget .bp-login-widget-user-links {
+            margin-left: 70px
+        }
+
+        #bp-login-widget-form label {
+            display: block;
+            font-weight: 600;
+            margin: 15px 0 5px;
+            width: auto
+        }
+
+        #bp-login-widget-form input[type=password],
+        #bp-login-widget-form input[type=text] {
+            background-color: #fafafa;
+            border: 1px solid #d6d6d6;
+            border-radius: 0;
+            font: inherit;
+            font-size: 100%;
+            padding: .5em;
+            width: 100%
+        }
+
+        #bp-login-widget-form .bp-login-widget-register-link,
+        #bp-login-widget-form .login-submit {
+            display: inline;
+            width: -moz-fit-content;
+            width: fit-content
+        }
+
+        #bp-login-widget-form .bp-login-widget-register-link {
+            margin-left: 1em
+        }
+
+        #bp-login-widget-form .bp-login-widget-register-link a {
+            filter: invert(1)
+        }
+
+        #bp-login-widget-form .bp-login-widget-pwd-link {
+            font-size: 80%
+        }
+    </style>
+    <style id="bp-member-style-inline-css">
+        [data-type="bp/member"] input.components-placeholder__input {
+            border: 1px solid #757575;
+            border-radius: 2px;
+            flex: 1 1 auto;
+            padding: 6px 8px
+        }
+
+        .bp-block-member {
+            position: relative
+        }
+
+        .bp-block-member .member-content {
+            display: flex
+        }
+
+        .bp-block-member .user-nicename {
+            display: block
+        }
+
+        .bp-block-member .user-nicename a {
+            border: none;
+            color: currentColor;
+            text-decoration: none
+        }
+
+        .bp-block-member .bp-profile-button {
+            width: 100%
+        }
+
+        .bp-block-member .bp-profile-button a.button {
+            bottom: 10px;
+            display: inline-block;
+            margin: 18px 0 0;
+            position: absolute;
+            right: 0
+        }
+
+        .bp-block-member.has-cover .item-header-avatar,
+        .bp-block-member.has-cover .member-content,
+        .bp-block-member.has-cover .member-description {
+            z-index: 2
+        }
+
+        .bp-block-member.has-cover .member-content,
+        .bp-block-member.has-cover .member-description {
+            padding-top: 75px
+        }
+
+        .bp-block-member.has-cover .bp-member-cover-image {
+            background-color: #c5c5c5;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 0;
+            display: block;
+            height: 150px;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 1
+        }
+
+        .bp-block-member img.avatar {
+            height: auto;
+            width: auto
+        }
+
+        .bp-block-member.avatar-none .item-header-avatar {
+            display: none
+        }
+
+        .bp-block-member.avatar-none.has-cover {
+            min-height: 200px
+        }
+
+        .bp-block-member.avatar-full {
+            min-height: 150px
+        }
+
+        .bp-block-member.avatar-full .item-header-avatar {
+            width: 180px
+        }
+
+        .bp-block-member.avatar-thumb .member-content {
+            align-items: center;
+            min-height: 50px
+        }
+
+        .bp-block-member.avatar-thumb .item-header-avatar {
+            width: 70px
+        }
+
+        .bp-block-member.avatar-full.has-cover {
+            min-height: 300px
+        }
+
+        .bp-block-member.avatar-full.has-cover .item-header-avatar {
+            width: 200px
+        }
+
+        .bp-block-member.avatar-full.has-cover img.avatar {
+            background: hsla(0, 0%, 100%, .8);
+            border: 2px solid #fff;
+            margin-left: 20px
+        }
+
+        .bp-block-member.avatar-thumb.has-cover .item-header-avatar {
+            padding-top: 75px
+        }
+
+        .entry .entry-content .bp-block-member .user-nicename a {
+            border: none;
+            color: currentColor;
+            text-decoration: none
+        }
+    </style>
+    <style id="bp-members-style-inline-css">
+        [data-type="bp/members"] .components-placeholder.is-appender {
+            min-height: 0
+        }
+
+        [data-type="bp/members"] .components-placeholder.is-appender .components-placeholder__label:empty {
+            display: none
+        }
+
+        [data-type="bp/members"] .components-placeholder input.components-placeholder__input {
+            border: 1px solid #757575;
+            border-radius: 2px;
+            flex: 1 1 auto;
+            padding: 6px 8px
+        }
+
+        [data-type="bp/members"].avatar-none .member-description {
+            width: calc(100% - 44px)
+        }
+
+        [data-type="bp/members"].avatar-full .member-description {
+            width: calc(100% - 224px)
+        }
+
+        [data-type="bp/members"].avatar-thumb .member-description {
+            width: calc(100% - 114px)
+        }
+
+        [data-type="bp/members"] .member-content {
+            position: relative
+        }
+
+        [data-type="bp/members"] .member-content .is-right {
+            position: absolute;
+            right: 2px;
+            top: 2px
+        }
+
+        [data-type="bp/members"] .columns-2 .member-content .member-description,
+        [data-type="bp/members"] .columns-3 .member-content .member-description,
+        [data-type="bp/members"] .columns-4 .member-content .member-description {
+            padding-left: 44px;
+            width: calc(100% - 44px)
+        }
+
+        [data-type="bp/members"] .columns-3 .is-right {
+            right: -10px
+        }
+
+        [data-type="bp/members"] .columns-4 .is-right {
+            right: -50px
+        }
+
+        .bp-block-members.is-grid {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0
+        }
+
+        .bp-block-members.is-grid .member-content {
+            margin: 0 1.25em 1.25em 0;
+            width: 100%
+        }
+
+        @media(min-width: 600px) {
+            .bp-block-members.columns-2 .member-content {
+                width: calc(50% - .625em)
+            }
+
+            .bp-block-members.columns-2 .member-content:nth-child(2n) {
+                margin-right: 0
+            }
+
+            .bp-block-members.columns-3 .member-content {
+                width: calc(33.33333% - .83333em)
+            }
+
+            .bp-block-members.columns-3 .member-content:nth-child(3n) {
+                margin-right: 0
+            }
+
+            .bp-block-members.columns-4 .member-content {
+                width: calc(25% - .9375em)
+            }
+
+            .bp-block-members.columns-4 .member-content:nth-child(4n) {
+                margin-right: 0
+            }
+        }
+
+        .bp-block-members .member-content {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 1em;
+            text-align: center
+        }
+
+        .bp-block-members .member-content .item-header-avatar,
+        .bp-block-members .member-content .member-description {
+            width: 100%
+        }
+
+        .bp-block-members .member-content .item-header-avatar {
+            margin: 0 auto
+        }
+
+        .bp-block-members .member-content .item-header-avatar img.avatar {
+            display: inline-block
+        }
+
+        @media(min-width: 600px) {
+            .bp-block-members .member-content {
+                flex-direction: row;
+                text-align: left
+            }
+
+            .bp-block-members .member-content .item-header-avatar,
+            .bp-block-members .member-content .member-description {
+                width: auto
+            }
+
+            .bp-block-members .member-content .item-header-avatar {
+                margin: 0
+            }
+        }
+
+        .bp-block-members .member-content .user-nicename {
+            display: block
+        }
+
+        .bp-block-members .member-content .user-nicename a {
+            border: none;
+            color: currentColor;
+            text-decoration: none
+        }
+
+        .bp-block-members .member-content time {
+            color: #767676;
+            display: block;
+            font-size: 80%
+        }
+
+        .bp-block-members.avatar-none .item-header-avatar {
+            display: none
+        }
+
+        .bp-block-members.avatar-full {
+            min-height: 190px
+        }
+
+        .bp-block-members.avatar-full .item-header-avatar {
+            width: 180px
+        }
+
+        .bp-block-members.avatar-thumb .member-content {
+            min-height: 80px
+        }
+
+        .bp-block-members.avatar-thumb .item-header-avatar {
+            width: 70px
+        }
+
+        .bp-block-members.columns-2 .member-content,
+        .bp-block-members.columns-3 .member-content,
+        .bp-block-members.columns-4 .member-content {
+            display: block;
+            text-align: center
+        }
+
+        .bp-block-members.columns-2 .member-content .item-header-avatar,
+        .bp-block-members.columns-3 .member-content .item-header-avatar,
+        .bp-block-members.columns-4 .member-content .item-header-avatar {
+            margin: 0 auto
+        }
+
+        .bp-block-members img.avatar {
+            height: auto;
+            max-width: -moz-fit-content;
+            max-width: fit-content;
+            width: auto
+        }
+
+        .bp-block-members .member-content.has-activity {
+            align-items: center
+        }
+
+        .bp-block-members .member-content.has-activity .item-header-avatar {
+            padding-right: 1em
+        }
+
+        .bp-block-members .member-content.has-activity .wp-block-quote {
+            margin-bottom: 0;
+            text-align: left
+        }
+
+        .bp-block-members .member-content.has-activity .wp-block-quote cite a,
+        .entry .entry-content .bp-block-members .user-nicename a {
+            border: none;
+            color: currentColor;
+            text-decoration: none
+        }
+    </style>
+    <style id="bp-dynamic-members-style-inline-css">
+        .bp-dynamic-block-container .item-options {
+            font-size: .5em;
+            margin: 0 0 1em;
+            padding: 1em 0
+        }
+
+        .bp-dynamic-block-container .item-options a.selected {
+            font-weight: 600
+        }
+
+        .bp-dynamic-block-container ul.item-list {
+            list-style: none;
+            margin: 1em 0;
+            padding-left: 0
+        }
+
+        .bp-dynamic-block-container ul.item-list li {
+            margin-bottom: 1em
+        }
+
+        .bp-dynamic-block-container ul.item-list li:after,
+        .bp-dynamic-block-container ul.item-list li:before {
+            content: " ";
+            display: table
+        }
+
+        .bp-dynamic-block-container ul.item-list li:after {
+            clear: both
+        }
+
+        .bp-dynamic-block-container ul.item-list li .item-avatar {
+            float: left;
+            width: 60px
+        }
+
+        .bp-dynamic-block-container ul.item-list li .item {
+            margin-left: 70px
+        }
+    </style>
+    <style id="bp-online-members-style-inline-css">
+        .widget_bp_core_whos_online_widget .avatar-block,
+        [data-type="bp/online-members"] .avatar-block {
+            display: flex;
+            flex-flow: row wrap
+        }
+
+        .widget_bp_core_whos_online_widget .avatar-block img,
+        [data-type="bp/online-members"] .avatar-block img {
+            margin: .5em
+        }
+    </style>
+    <style id="bp-active-members-style-inline-css">
+        .widget_bp_core_recently_active_widget .avatar-block,
+        [data-type="bp/active-members"] .avatar-block {
+            display: flex;
+            flex-flow: row wrap
+        }
+
+        .widget_bp_core_recently_active_widget .avatar-block img,
+        [data-type="bp/active-members"] .avatar-block img {
+            margin: .5em
+        }
+    </style>
+    <style id="bp-latest-activities-style-inline-css">
+        .bp-latest-activities .components-flex.components-select-control select[multiple] {
+            height: auto;
+            padding: 0 8px
+        }
+
+        .bp-latest-activities .components-flex.components-select-control select[multiple]+.components-input-control__suffix svg {
+            display: none
+        }
+
+        .bp-latest-activities-block a,
+        .entry .entry-content .bp-latest-activities-block a {
+            border: none;
+            text-decoration: none
+        }
+
+        .bp-latest-activities-block .activity-list.item-list blockquote {
+            border: none;
+            padding: 0
+        }
+
+        .bp-latest-activities-block .activity-list.item-list blockquote .activity-item:not(.mini) {
+            box-shadow: 1px 0 4px rgba(0, 0, 0, .15);
+            padding: 0 1em;
+            position: relative
+        }
+
+        .bp-latest-activities-block .activity-list.item-list blockquote .activity-item:not(.mini):after,
+        .bp-latest-activities-block .activity-list.item-list blockquote .activity-item:not(.mini):before {
+            border-color: transparent;
+            border-style: solid;
+            content: "";
+            display: block;
+            height: 0;
+            left: 15px;
+            position: absolute;
+            width: 0
+        }
+
+        .bp-latest-activities-block .activity-list.item-list blockquote .activity-item:not(.mini):before {
+            border-top-color: rgba(0, 0, 0, .15);
+            border-width: 9px;
+            bottom: -18px;
+            left: 14px
+        }
+
+        .bp-latest-activities-block .activity-list.item-list blockquote .activity-item:not(.mini):after {
+            border-top-color: #fff;
+            border-width: 8px;
+            bottom: -16px
+        }
+
+        .bp-latest-activities-block .activity-list.item-list blockquote .activity-item.mini .avatar {
+            display: inline-block;
+            height: 20px;
+            margin-right: 2px;
+            vertical-align: middle;
+            width: 20px
+        }
+
+        .bp-latest-activities-block .activity-list.item-list footer {
+            align-items: center;
+            display: flex
+        }
+
+        .bp-latest-activities-block .activity-list.item-list footer img.avatar {
+            border: none;
+            display: inline-block;
+            margin-right: .5em
+        }
+
+        .bp-latest-activities-block .activity-list.item-list footer .activity-time-since {
+            font-size: 90%
+        }
+
+        .bp-latest-activities-block .widget-error {
+            border-left: 4px solid #0b80a4;
+            box-shadow: 1px 0 4px rgba(0, 0, 0, .15)
+        }
+
+        .bp-latest-activities-block .widget-error p {
+            padding: 0 1em
+        }
+    </style>
+    <style id="bp-friends-style-inline-css">
+        .bp-dynamic-block-container .item-options {
+            font-size: .5em;
+            margin: 0 0 1em;
+            padding: 1em 0
+        }
+
+        .bp-dynamic-block-container .item-options a.selected {
+            font-weight: 600
+        }
+
+        .bp-dynamic-block-container ul.item-list {
+            list-style: none;
+            margin: 1em 0;
+            padding-left: 0
+        }
+
+        .bp-dynamic-block-container ul.item-list li {
+            margin-bottom: 1em
+        }
+
+        .bp-dynamic-block-container ul.item-list li:after,
+        .bp-dynamic-block-container ul.item-list li:before {
+            content: " ";
+            display: table
+        }
+
+        .bp-dynamic-block-container ul.item-list li:after {
+            clear: both
+        }
+
+        .bp-dynamic-block-container ul.item-list li .item-avatar {
+            float: left;
+            width: 60px
+        }
+
+        .bp-dynamic-block-container ul.item-list li .item {
+            margin-left: 70px
+        }
+    </style>
+    <style id="bp-group-style-inline-css">
+        [data-type="bp/group"] input.components-placeholder__input {
+            border: 1px solid #757575;
+            border-radius: 2px;
+            flex: 1 1 auto;
+            padding: 6px 8px
+        }
+
+        .bp-block-group {
+            position: relative
+        }
+
+        .bp-block-group .group-content {
+            display: flex
+        }
+
+        .bp-block-group .group-description {
+            width: 100%
+        }
+
+        .bp-block-group .group-description-content {
+            margin-bottom: 18px;
+            width: 100%
+        }
+
+        .bp-block-group .bp-profile-button {
+            overflow: hidden;
+            width: 100%
+        }
+
+        .bp-block-group .bp-profile-button a.button {
+            margin: 18px 0 0
+        }
+
+        .bp-block-group.has-cover .group-content,
+        .bp-block-group.has-cover .group-description,
+        .bp-block-group.has-cover .item-header-avatar {
+            z-index: 2
+        }
+
+        .bp-block-group.has-cover .group-content,
+        .bp-block-group.has-cover .group-description {
+            padding-top: 75px
+        }
+
+        .bp-block-group.has-cover .bp-group-cover-image {
+            background-color: #c5c5c5;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 0;
+            display: block;
+            height: 150px;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 1
+        }
+
+        .bp-block-group img.avatar {
+            height: auto;
+            width: auto
+        }
+
+        .bp-block-group.avatar-none .item-header-avatar {
+            display: none
+        }
+
+        .bp-block-group.avatar-full {
+            min-height: 150px
+        }
+
+        .bp-block-group.avatar-full .item-header-avatar {
+            width: 180px
+        }
+
+        .bp-block-group.avatar-full .group-description {
+            padding-left: 35px
+        }
+
+        .bp-block-group.avatar-thumb .item-header-avatar {
+            width: 70px
+        }
+
+        .bp-block-group.avatar-thumb .item-header-avatar img.avatar {
+            margin-top: 15px
+        }
+
+        .bp-block-group.avatar-none.has-cover {
+            min-height: 200px
+        }
+
+        .bp-block-group.avatar-none.has-cover .item-header-avatar {
+            padding-top: 75px
+        }
+
+        .bp-block-group.avatar-full.has-cover {
+            min-height: 300px
+        }
+
+        .bp-block-group.avatar-full.has-cover .item-header-avatar {
+            width: 200px
+        }
+
+        .bp-block-group.avatar-full.has-cover img.avatar {
+            background: hsla(0, 0%, 100%, .8);
+            border: 2px solid #fff;
+            margin-left: 20px
+        }
+
+        .bp-block-group.avatar-thumb:not(.has-description) .group-content {
+            align-items: center;
+            min-height: 50px
+        }
+
+        .bp-block-group.avatar-thumb.has-cover .item-header-avatar {
+            padding-top: 75px
+        }
+
+        .bp-block-group.has-description .bp-profile-button a.button {
+            display: block;
+            float: right
+        }
+    </style>
+    <style id="bp-groups-style-inline-css">
+        [data-type="bp/groups"] .components-placeholder.is-appender {
+            min-height: 0
+        }
+
+        [data-type="bp/groups"] .components-placeholder.is-appender .components-placeholder__label:empty {
+            display: none
+        }
+
+        [data-type="bp/groups"] .components-placeholder input.components-placeholder__input {
+            border: 1px solid #757575;
+            border-radius: 2px;
+            flex: 1 1 auto;
+            padding: 6px 8px
+        }
+
+        [data-type="bp/groups"].avatar-none .group-description {
+            width: calc(100% - 44px)
+        }
+
+        [data-type="bp/groups"].avatar-full .group-description {
+            width: calc(100% - 224px)
+        }
+
+        [data-type="bp/groups"].avatar-thumb .group-description {
+            width: calc(100% - 114px)
+        }
+
+        [data-type="bp/groups"] .group-content {
+            position: relative
+        }
+
+        [data-type="bp/groups"] .group-content .is-right {
+            position: absolute;
+            right: 2px;
+            top: 2px
+        }
+
+        [data-type="bp/groups"] .columns-2 .group-content .group-description,
+        [data-type="bp/groups"] .columns-3 .group-content .group-description,
+        [data-type="bp/groups"] .columns-4 .group-content .group-description {
+            padding-left: 44px;
+            width: calc(100% - 44px)
+        }
+
+        [data-type="bp/groups"] .columns-3 .is-right {
+            right: -10px
+        }
+
+        [data-type="bp/groups"] .columns-4 .is-right {
+            right: -50px
+        }
+
+        .bp-block-groups.is-grid {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0
+        }
+
+        .bp-block-groups.is-grid .group-content {
+            margin: 0 1.25em 1.25em 0;
+            width: 100%
+        }
+
+        @media(min-width: 600px) {
+            .bp-block-groups.columns-2 .group-content {
+                width: calc(50% - .625em)
+            }
+
+            .bp-block-groups.columns-2 .group-content:nth-child(2n) {
+                margin-right: 0
+            }
+
+            .bp-block-groups.columns-3 .group-content {
+                width: calc(33.33333% - .83333em)
+            }
+
+            .bp-block-groups.columns-3 .group-content:nth-child(3n) {
+                margin-right: 0
+            }
+
+            .bp-block-groups.columns-4 .group-content {
+                width: calc(25% - .9375em)
+            }
+
+            .bp-block-groups.columns-4 .group-content:nth-child(4n) {
+                margin-right: 0
+            }
+        }
+
+        .bp-block-groups .group-content {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 1em;
+            text-align: center
+        }
+
+        .bp-block-groups .group-content .group-description,
+        .bp-block-groups .group-content .item-header-avatar {
+            width: 100%
+        }
+
+        .bp-block-groups .group-content .item-header-avatar {
+            margin: 0 auto
+        }
+
+        .bp-block-groups .group-content .item-header-avatar img.avatar {
+            display: inline-block
+        }
+
+        @media(min-width: 600px) {
+            .bp-block-groups .group-content {
+                flex-direction: row;
+                text-align: left
+            }
+
+            .bp-block-groups .group-content .group-description,
+            .bp-block-groups .group-content .item-header-avatar {
+                width: auto
+            }
+
+            .bp-block-groups .group-content .item-header-avatar {
+                margin: 0
+            }
+        }
+
+        .bp-block-groups .group-content time {
+            color: #767676;
+            display: block;
+            font-size: 80%
+        }
+
+        .bp-block-groups.avatar-none .item-header-avatar {
+            display: none
+        }
+
+        .bp-block-groups.avatar-full {
+            min-height: 190px
+        }
+
+        .bp-block-groups.avatar-full .item-header-avatar {
+            width: 180px
+        }
+
+        .bp-block-groups.avatar-thumb .group-content {
+            min-height: 80px
+        }
+
+        .bp-block-groups.avatar-thumb .item-header-avatar {
+            width: 70px
+        }
+
+        .bp-block-groups.columns-2 .group-content,
+        .bp-block-groups.columns-3 .group-content,
+        .bp-block-groups.columns-4 .group-content {
+            display: block;
+            text-align: center
+        }
+
+        .bp-block-groups.columns-2 .group-content .item-header-avatar,
+        .bp-block-groups.columns-3 .group-content .item-header-avatar,
+        .bp-block-groups.columns-4 .group-content .item-header-avatar {
+            margin: 0 auto
+        }
+
+        .bp-block-groups img.avatar {
+            height: auto;
+            max-width: -moz-fit-content;
+            max-width: fit-content;
+            width: auto
+        }
+
+        .bp-block-groups .member-content.has-description {
+            align-items: center
+        }
+
+        .bp-block-groups .member-content.has-description .item-header-avatar {
+            padding-right: 1em
+        }
+
+        .bp-block-groups .member-content.has-description .group-description-content {
+            margin-bottom: 0;
+            text-align: left
+        }
+    </style>
+    <style id="bp-dynamic-groups-style-inline-css">
+        .bp-dynamic-block-container .item-options {
+            font-size: .5em;
+            margin: 0 0 1em;
+            padding: 1em 0
+        }
+
+        .bp-dynamic-block-container .item-options a.selected {
+            font-weight: 600
+        }
+
+        .bp-dynamic-block-container ul.item-list {
+            list-style: none;
+            margin: 1em 0;
+            padding-left: 0
+        }
+
+        .bp-dynamic-block-container ul.item-list li {
+            margin-bottom: 1em
+        }
+
+        .bp-dynamic-block-container ul.item-list li:after,
+        .bp-dynamic-block-container ul.item-list li:before {
+            content: " ";
+            display: table
+        }
+
+        .bp-dynamic-block-container ul.item-list li:after {
+            clear: both
+        }
+
+        .bp-dynamic-block-container ul.item-list li .item-avatar {
+            float: left;
+            width: 60px
+        }
+
+        .bp-dynamic-block-container ul.item-list li .item {
+            margin-left: 70px
+        }
+    </style>
+    <style id="bp-sitewide-notices-style-inline-css">
+        .bp-sitewide-notice-block .bp-screen-reader-text,
+        [data-type="bp/sitewide-notices"] .bp-screen-reader-text {
+            clip: rect(0 0 0 0);
+            word-wrap: normal !important;
+            border: 0;
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px
+        }
+
+        .bp-sitewide-notice-block [data-bp-tooltip]:after,
+        [data-type="bp/sitewide-notices"] [data-bp-tooltip]:after {
+            word-wrap: break-word;
+            background-color: #fff;
+            border: 1px solid #737373;
+            border-radius: 1px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, .2);
+            color: #333;
+            content: attr(data-bp-tooltip);
+            display: none;
+            font-family: Helvetica Neue, Helvetica, Arial, san-serif;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: normal;
+            line-height: 1.25;
+            max-width: 200px;
+            opacity: 0;
+            padding: 5px 8px;
+            pointer-events: none;
+            position: absolute;
+            text-shadow: none;
+            text-transform: none;
+            transform: translateZ(0);
+            transition: all 1.5s ease;
+            visibility: hidden;
+            white-space: nowrap;
+            z-index: 100000
+        }
+
+        .bp-sitewide-notice-block .bp-tooltip:after,
+        [data-type="bp/sitewide-notices"] .bp-tooltip:after {
+            left: 50%;
+            margin-top: 7px;
+            top: 110%;
+            transform: translate(-50%)
+        }
+
+        .bp-sitewide-notice-block {
+            border-left: 4px solid #ff853c;
+            padding-left: 1em;
+            position: relative
+        }
+
+        .bp-sitewide-notice-block h2:before {
+            background: none;
+            border: none
+        }
+
+        .bp-sitewide-notice-block .dismiss-notice {
+            background-color: transparent;
+            border: 1px solid #ff853c;
+            color: #ff853c;
+            display: block;
+            padding: .2em .5em;
+            position: absolute;
+            right: .5em;
+            top: .5em;
+            width: -moz-fit-content;
+            width: fit-content
+        }
+
+        .bp-sitewide-notice-block .dismiss-notice:hover {
+            background-color: #ff853c;
+            color: #fff
+        }
+    </style>
+    <style id="rank-math-toc-block-style-inline-css">
+        .wp-block-rank-math-toc-block nav ol {
+            counter-reset: item
+        }
+
+        .wp-block-rank-math-toc-block nav ol li {
+            display: block
+        }
+
+        .wp-block-rank-math-toc-block nav ol li:before {
+            content: counters(item, ".") ". ";
+            counter-increment: item
+        }
+    </style>
+    <style id="classic-theme-styles-inline-css">
+        /*! This file is auto-generated */
+        .wp-block-button__link {
+            color: #fff;
+            background-color: #32373c;
+            border-radius: 9999px;
+            box-shadow: none;
+            text-decoration: none;
+            padding: calc(.667em + 2px) calc(1.333em + 2px);
+            font-size: 1.125em
+        }
+
+        .wp-block-file__button {
+            background: #32373c;
+            color: #fff;
+            text-decoration: none
+        }
+    </style>
+    <style id="global-styles-inline-css">
+        body {
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+        }
+
+        :where(.is-layout-flex) {
+            gap: 0.5em;
+        }
+
+        :where(.is-layout-grid) {
+            gap: 0.5em;
+        }
+
+        body .is-layout-flex {
+            display: flex;
+        }
+
+        body .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        body .is-layout-flex>* {
+            margin: 0;
+        }
+
+        body .is-layout-grid {
+            display: grid;
+        }
+
+        body .is-layout-grid>* {
+            margin: 0;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+
+        .wp-block-navigation a:where(:not(.wp-element-button)) {
+            color: inherit;
+        }
+
+        :where(.wp-block-post-template.is-layout-flex) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-post-template.is-layout-grid) {
+            gap: 1.25em;
+        }
+
+        :where(.wp-block-columns.is-layout-flex) {
+            gap: 2em;
+        }
+
+        :where(.wp-block-columns.is-layout-grid) {
+            gap: 2em;
+        }
+
+        .wp-block-pullquote {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+    </style>
+
+    <link rel="stylesheet" href="assets/css/post.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/js/overlay-scrollbars/OverlayScrollbars.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/header/h-poppy.css" />
+    <link rel="stylesheet" href="assets/css/side-menu/side-menu.css">
+    <link rel="stylesheet" href="assets/css/header/sticky-menu/sticky-menu.css">
+    <link rel="stylesheet" href="assets/css/video/player.css" />
+    <link rel="stylesheet" href="assets/css/audio/player.css" />
+    <link rel="stylesheet" href="assets/css/channel/channel.css" />
+    <link rel="stylesheet" href="assets/css/playlist/playlist.css" />
+    <link rel="stylesheet" href="assets/css/series/series.css" />
+    <link rel="stylesheet" href="assets/css/cast/cast-variant.css" />
+    <link rel="stylesheet" href="assets/css/watch-later/watch-later.css" />
+    <link rel="stylesheet" href="assets/css/like-dislike/reactions.css" />
+    <link rel="stylesheet" href="assets/membership/assets/membership.css" />
+    <link rel="stylesheet" href="assets/virtual-gifts/assets/myCred-transfer.css" />
+    <link rel="stylesheet" href="assets/buycred/assets/buycred.css" />
+    <link rel="stylesheet" href="assets/mycred-sell-content/assets/mycred-sell-content.css" />
+    <link rel="stylesheet" href="assets/trending/assets/trending.css" />
+    <link rel="stylesheet" href="assets/login-register/assets/login-register.css" />
+    <link rel="stylesheet" href="assets/css/header/mega-menu/mega-menu.css">
+    <link rel="stylesheet" href="assets/pro-player/assets/time-stamp.css" />
+    <link rel="stylesheet" href="assets/video-quizzes/assets/video-quizzes.css" />
+    <link rel="stylesheet" href="assets/subscription/assets/subscription.css" />
+    <link rel="stylesheet" href="assets/woocommerce/assets/woo.css" />
+    <link rel="stylesheet" href="assets/css/buddypress/buddypress.css" />
+    <link rel="stylesheet" href="assets/css/btwes.css" />
+    <link rel="stylesheet" href="assets/css/dark-version.css" />
+    <link rel="stylesheet" href="assets/css/block/block.css" />
+    <link rel="stylesheet" href="assets/css/slider/slider.css" />
+    <link rel="stylesheet" href="assets/block-pro/block-pro.css" />
+    <link rel="stylesheet" href="assets/slider-pro/slider-pro.css" />
+    <link rel="stylesheet" href="assets/js/swiper-slider/swiper-bundle.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/btwes.js"></script>
+    <script id="beeteam368_obj_wes-js-extra">
+        var vidmov_jav_js_object = {
+            "admin_ajax": "https:\/\/vm.beeteam368.net\/wp-admin\/admin-ajax.php",
+            "query_vars": {
+                "page": 0,
+                "pagename": "home-page-demo-6-2",
+                "error": "",
+                "m": "",
+                "p": 0,
+                "post_parent": "",
+                "subpost": "",
+                "subpost_id": "",
+                "attachment": "",
+                "attachment_id": 0,
+                "name": "home-page-demo-6-2",
+                "page_id": 0,
+                "second": "",
+                "minute": "",
+                "hour": "",
+                "day": 0,
+                "monthnum": 0,
+                "year": 0,
+                "w": 0,
+                "category_name": "",
+                "tag": "",
+                "cat": "",
+                "tag_id": "",
+                "author": "",
+                "author_name": "",
+                "feed": "",
+                "tb": "",
+                "paged": 0,
+                "meta_key": "",
+                "meta_value": "",
+                "preview": "",
+                "s": "", "sentence": "", "title": "", "fields": "", "menu_order": "", "embed": "", "category__in": [], "category__not_in": [], "category__and": [], "post__in": [], "post__not_in": [], "post_name__in": [], "tag__in": [], "tag__not_in": [], "tag__and": [], "tag_slug__in": [], "tag_slug__and": [], "post_parent__in": [], "post_parent__not_in": [], "author__in": [], "author__not_in": [], "search_columns": [], "post_type": ["post", "page", "e-landing-page"], "ignore_sticky_posts": false, "suppress_filters": false, "cache_results": true, "update_post_term_cache": true, "update_menu_item_cache": false, "lazy_load_term_meta": true, "update_post_meta_cache": true, "posts_per_page": 10, "nopaging": false, "comments_per_page": "50", "no_found_rows": false, "order": "DESC"
+            }, "security": "d6ad9be9f9", "no_more_posts_to_load_text": "No More Posts To Load...", "want_to_exit_text": "Are you sure you want to exit?", "processing_data_do_not_close_text": "Processing data... Please do not close the browser and this popup.", "stay_text": "Stay...", "exit_text": "Exit", "side_menu": "on", "sticky_menu": "on", "cache_version": "2.2.2", "current_url": "https:\/\/vm.beeteam368.net\/home-page-demo-6-2\/?random_query=1716643174", "collapse_content_check": "1", "show_more_text": "Show More", "show_less_text": "Show Less", "report_error_choose_one_field": "Choose one from the suggested issues below.", "review_library_url": "https:\/\/vm.beeteam368.net\/wp-content\/plugins\/beeteam368-extensions\/inc\/review\/assets\/", "very_poor_text": "Very Poor", "poor_text": "Poor", "ok_text": "Ok", "good_text": "Good", "very_good_text": "Very Good", "thanks_for_rating_text": "Thanks for rating", "clear_text": "Clear", "not_rated_text": "Not Rated", "Half_Star_text": "Half Star", "One_Star_text": "One Star", "One_Half_Star_text": "One & Half Star", "Two_Stars_text": "Two Stars", "Two_Half_Stars_text": "Clear", "Three_Stars_text": "Three Stars", "Three_Half_Stars_text": "Three & Half Stars", "Four_Stars_text": "Four Stars", "Four_Half_Stars_text": "Four & Half Stars", "Five_Stars_text": "Five Stars", "Five_Half_Stars_text": "Five & Half Stars", "Six_Stars_text": "Six Stars", "Six_Half_Stars_text": "Six & Half Stars", "Seven_Stars_text": "Seven Stars", "Seven_Half_Stars_text": "Seven & Half Stars", "Eight_Stars_text": "Eight Stars", "Eight_Half_Stars_text": "Eight & Half Stars", "Nine_Stars_text": "Nine Stars", "Nine_Half_Stars_text": "Nine & Half Stars", "Ten_Stars_text": "Ten Stars", "review_unit": "percent", "reactions_listing": { "like": { "number": 0, "users": [], "text": "Like", "icon": "<i class=\"fas fa-heart\"><\/i>" }, "dislike": { "number": 0, "users": [], "text": "Dislike", "icon": "<i class=\"fas fa-thumbs-down\"><\/i>" }, "squint_tears": { "number": 0, "users": [], "text": "Squint Tears", "icon": "<i class=\"far fa-grin-squint-tears\"><\/i>" }, "cry": { "number": 0, "users": [], "text": "Cry", "icon": "<i class=\"far fa-sad-cry\"><\/i>" } }, "reactions_text_processing": "Processing...", "player_library_url": "https:\/\/vm.beeteam368.net\/wp-content\/plugins\/beeteam368-extensions-pro\/inc\/pro-player\/assets\/", "player_library_lang": "en", "player_crossorigin": "", "player_use_fake_fullscreen": "on", "player_video_jump_forward": "on", "player_video_jump_forward_interval": "15", "player_audio_crossorigin": "", "player_audio_sound_waves": "on", "player_adjust_video_size": "on", "floating_video_desktop": "on", "floating_video_mobile": "on", "video_link_does_not_exist_text": "Oops, Video link does not exist or has not been updated!!!", "audio_link_does_not_exist_text": "Oops, Audio link does not exist or has not been updated!!!", "video_no_preview_text": "No Preview", "video_knbdn_loading_advertisement": "Loading advertisement...", "video_knbdn_skip_ad": "Skip Ad", "video_knbdn_skip_ad_in": "Skip Ad in", "video_knbdn_ad_single_text": "Ad", "video_player_logo": "https:\/\/vm.beeteam368.net\/wp-content\/uploads\/2021\/11\/main-logo-dark.png", "video_player_logo_link_target": "", "video_player_logo_position": "top-left", "virtual_gifts_default_bonus_points": "50,100,250", "virtual_gifts_default_bonus_text": "%giver% gives %points% points", "mycred_purchases_page": "https:\/\/vm.beeteam368.net\/buy\/", "mycred_purchases_page_text": "Buy Points", "playlist_error_enter_title": "Please enter the title of the playlist.", "upload_library_function_url": "https:\/\/vm.beeteam368.net\/wp-content\/plugins\/beeteam368-extensions-pro\/inc\/user-submit-post\/assets\/", "dictFileTooBig": "File is too big ({{filesize}}MiB). Max filesize: {{maxFilesize}}MiB.", "dictInvalidFileType": "You can't upload files of this type.", "dictResponseError": "Server responded with {{statusCode}} code.", "dictCancelUpload": "Processing... [Cancel Upload]", "dictCancelUploadConfirmation": "Are you sure you want to cancel this upload?", "dictRemoveFile": "Remove", "dictRemoveFileConfirmation": "Are you sure you want to delete this file?", "dictMaxFilesExceeded": "You can not upload any more files.", "tinymce_description": "off", "media_maxFilesize": "10", "media_maxChunkSize": "30", "media_acceptedFiles": ".mp4,.m4v,.mov,.wmv,.avi,.mpg,.3gp,3g2,.webm,.ogg,.ogv,.mpd,.mp3,.oga,.wav", "featured_image_maxFilesize": "6", "dictConfirmDeletePost": "Are you sure to delete this item?", "dictConfirmDeleteSource": "Are you sure to delete and replace with new source?", "login_popup_banner": "https:\/\/vm.beeteam368.net\/wp-content\/uploads\/2021\/12\/login-banner.jpg", "video_vast_time_out": "888", "quizzes_exactly_great": "Exactly, great", "quizzes_answered_incorrectly": "Answered incorrectly", "quizzes_time_out": "Time Out", "quizzes_sound_start": "https:\/\/vm.beeteam368.net\/wp-content\/plugins\/beeteam368-extensions-pro\/inc\/video-quizzes\/assets\/sound-start.mp3", "quizzes_sound_correct": "https:\/\/vm.beeteam368.net\/wp-content\/plugins\/beeteam368-extensions-pro\/inc\/video-quizzes\/assets\/sound-correct.mp3", "quizzes_sound_wrong": "https:\/\/vm.beeteam368.net\/wp-content\/plugins\/beeteam368-extensions-pro\/inc\/video-quizzes\/assets\/sound-wrong.mp3", "live_tinymce_description": "off", "live_event_stop_text": "The stream has ended, thanks for watching!", "live_event_pause_text": "The live stream is paused and may resume shortly.", "live_event_starting_text": "Stream is starting soon.", "live_event_not_live_text": "We are not live at this moment. Please check back later.", "live_unknown_state_text": "Unknown State.", "logo_switch": { "main_light": "<img width=\"162\" height=\"38\" alt=\"VidMov Theme\" src=\"https:\/\/vm.beeteam368.net\/wp-content\/uploads\/2021\/11\/main-logo-light.png\" sizes=\"(max-width: 162px) 100vw, 162px\" srcset=\"https:\/\/vm.beeteam368.net\/wp-content\/uploads\/2021\/11\/main-logo-light.png 162w, https:\/\/vm.beeteam368.net\/wp-content\/uploads\/2021\/11\/main-logo-retina-light.png 325w\" class=\"beeteam368-logo-img\">", "main_dark": "<img width=\"162\" height=\"38\" alt=\"VidMov Theme\" src=\"https:\/\/vm.beeteam368.net\/wp-content\/uploads\/2021\/11\/main-logo-dark.png\" sizes=\"(max-width: 162px) 100vw, 162px\" srcset=\"https:\/\/vm.beeteam368.net\/wp-content\/uploads\/2021\/11\/main-logo-dark.png 162w, https:\/\/vm.beeteam368.net\/wp-content\/uploads\/2021\/11\/main-logo-retina-dark.png 325w\" class=\"beeteam368-logo-img\">", "mobile_light": "<img width=\"150\" height=\"35\" alt=\"VidMov Theme\" src=\"https:\/\/vm.beeteam368.net\/wp-content\/uploads\/2021\/11\/main-logo-mobile-light.png\" sizes=\"(max-width: 150px) 100vw, 150px\" srcset=\"https:\/\/vm.beeteam368.net\/wp-content\/uploads\/2021\/11\/main-logo-mobile-light.png 150w, https:\/\/vm.beeteam368.net\/wp-content\/uploads\/2021\/11\/main-logo-mobile-retina-light.png 299w\" class=\"beeteam368-logo-img\">", "mobile_dark": "<img width=\"150\" height=\"35\" alt=\"VidMov Theme\" src=\"https:\/\/vm.beeteam368.net\/wp-content\/uploads\/2021\/11\/main-logo-mobile-dark.png\" sizes=\"(max-width: 150px) 100vw, 150px\" srcset=\"https:\/\/vm.beeteam368.net\/wp-content\/uploads\/2021\/11\/main-logo-mobile-dark.png 150w, https:\/\/vm.beeteam368.net\/wp-content\/uploads\/2021\/11\/main-logo-mobile-retina-dark.png 299w\" class=\"beeteam368-logo-img\">", "side_light": "<img width=\"92\" height=\"30\" alt=\"VidMov Theme\" src=\"https:\/\/vm.beeteam368.net\/wp-content\/uploads\/2021\/11\/side-logo-light.png\" sizes=\"(max-width: 92px) 100vw, 92px\" srcset=\"https:\/\/vm.beeteam368.net\/wp-content\/uploads\/2021\/11\/side-logo-light.png 92w, https:\/\/vm.beeteam368.net\/wp-content\/uploads\/2021\/11\/side-logo-retina-light.png 185w\" class=\"beeteam368-logo-img\">", "side_dark": "<img width=\"92\" height=\"30\" alt=\"VidMov Theme\" src=\"https:\/\/vm.beeteam368.net\/wp-content\/uploads\/2021\/11\/side-logo-dark.png\" sizes=\"(max-width: 92px) 100vw, 92px\" srcset=\"https:\/\/vm.beeteam368.net\/wp-content\/uploads\/2021\/11\/side-logo-dark.png 92w, https:\/\/vm.beeteam368.net\/wp-content\/uploads\/2021\/11\/side-logo-retina-dark.png 185w\" class=\"beeteam368-logo-img\">" }
+        };
+    </script>
+
+
+
+    <style>
+        .mt-10 {
+            margin-top: 10px;
+        }
+
+        .mb-10 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<div>
+    <header id="beeteam368-site-header"
+        class="beeteam368-site-header beeteam368-site-header-control flex-row-control beeteam368-h-poppy">
+        <div class="beeteam368-top-menu beeteam368-top-menu-control">
+            <div class="site__container main__container-control">
+
+                <div class="site__row flex-row-control flex-vertical-middle beeteam368-top-menu-row">
+                    <div class="site__col auto-width beeteam368-logo">
+                        <div class="beeteam368-logo-wrap">
+                            <a href="https://vm.beeteam368.net/" title="VidMov Theme"
+                                class="beeteam368-logo-link h1 main-logo-control">
+                                <img loading="lazy" width="162" height="38" alt="VidMov Theme"
+                                    src="https://vm.beeteam368.net/wp-content/uploads/2021/11/main-logo-light.png"
+                                    sizes="(max-width: 162px) 100vw, 162px"
+                                    srcset="https://vm.beeteam368.net/wp-content/uploads/2021/11/main-logo-light.png 162w, https://vm.beeteam368.net/wp-content/uploads/2021/11/main-logo-retina-light.png 325w"
+                                    class="beeteam368-logo-img"> </a>
+                        </div>
+                    </div>
+                    <div class="site__col beeteam368-searchbox">
+                    </div>
+
+                    <div class="beeteam368-social-account site__col auto-width">
+                        <div
+                            class="beeteam368-social-account-wrap flex-row-control flex-vertical-middle flex-row-center">
+                            <div class="beeteam368-icon-item primary-color beeteam368-i-live-control tooltip-style bottom-center beeteam368-global-open-popup-control"
+                                data-popup-id="beeteam368_live_popup" data-action="beeteam368_live_popup">
+                                <i class="fas fa-broadcast-tower"></i>
+                                <span class="tooltip-text">Go Live</span>
+                            </div>
+                            <div class="beeteam368-icon-item beeteam368-i-submit-control tooltip-style bottom-center beeteam368-global-open-popup-control"
+                                data-popup-id="submit_post_add_popup" data-action="open_submit_post_add_popup">
+                                <i class="fas fa-plus"></i>
+                                <span class="tooltip-text">Create</span>
+                            </div>
+                            <a href="https://vm.beeteam368.net/main-login/" data-redirect="notifications_page"
+                                data-note="Please subscribe your favorite channels to receive notifications."
+                                class="beeteam368-icon-item beeteam368-top-menu-notifications reg-log-popup-control tooltip-style bottom-center">
+                                <i class="fas fa-bell"></i>
+                                <span class="tooltip-text">Notifications</span>
+                            </a>
+                            <a href="https://vm.beeteam368.net/main-login/" data-redirect="watch_later_page"
+                                data-note="Sign in to see posts you've added to your watch later list."
+                                class="beeteam368-icon-item beeteam368-top-menu-watch-later reg-log-popup-control tooltip-style bottom-center">
+                                <i class="fas fa-clock"></i>
+                                <span class="tooltip-text">Watch Later</span>
+                            </a>
+                            <a href="https://vm.beeteam368.net/cart/"
+                                class="beeteam368-icon-item beeteam368-top-menu-woo-cart tooltip-style bottom-center">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="tooltip-text">Cart</span>
+                                <span class="cart-total-items">0</span>
+                            </a>
+                            <a href="https://vm.beeteam368.net/buy/"
+                                class="beeteam368-icon-item beeteam368-top-menu-purchases tooltip-style bottom-center">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span class="tooltip-text">Purchases</span>
+                            </a>
+                            <a href="https://vm.beeteam368.net/membership-subscription-plans/"
+                                class="beeteam368-icon-item beeteam368-top-menu-membership tooltip-style bottom-center">
+                                <i class="fas fa-user-shield"></i>
+                                <span class="tooltip-text">Membership Plans</span>
+                            </a>
+                            <div
+                                class="beeteam368-icon-item beeteam368-dark-light-btn beeteam368-i-dark-light-btn-control">
+                                <span class="light-bg-layer"></span>
+                                <span class="dark-bg-layer"></span>
+                                <span class="light-layer"><i class="fas fa-sun"></i></span>
+                                <span class="dark-layer"><i class="far fa-sun"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="beeteam368-social-account-sub-login-nav site__col auto-width">
+                        <div class="beeteam368-social-account-wrap flex-row-control">
+                            <a href="https://rvxoxo.com/main-login/"
+                                class="beeteam368-icon-item beeteam368-i-member tooltip-style left-item reg-log-popup-control"
+                                data-note="If you already have an account, you can use it to sign in here.">
+                                <i class="fas fa-user"></i>
+                                <span class="tooltip-text">Click to login or register</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="beeteam368-main-menu beeteam368-main-menu-control">
+            <div class="site__container main__container-control beeteam368-menu-container-mobile">
+                <div class="site__row flex-row-control flex-vertical-middle beeteam368-main-menu-row">
+                    <div class="site__col auto-width beeteam368-mobile-menu-btn">
+                        <div class="oc-mb-mn-btn oc-mb-mn-btn-control ">
+                            <div class="bar top"></div>
+                            <div class="bar middle"></div>
+                            <div class="bar bottom"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="beeteam368-main-nav site__col auto-width">
+                        <ul class="flex-row-control nav-font menu-items-lyt menu-items-lyt-control ">
+                            <li id="menu-item-21"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home current-menu-item  current_page_item menu-item-21">
+                                <a href="https://vm.beeteam368.net/">Home</a>
+
+                            </li>
+                            <li id="menu-item-22"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22">
+                                <a href="#">Video</a>
+
+                            </li>
+                            <li id="menu-item-23"
+                                class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-23">
+                                <a href="#">Audio</a>
+
+                            </li>
+                            <li id="menu-item-65"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-65">
+                                <a href="#">Sell Media</a>
+
+                            </li>
+                            <li id="menu-item-4003"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4003">
+                                <a href="#">BuddyPress</a>
+
+                            </li>
+                            <li id="menu-item-4003"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4003">
+                                <a href="#">Element</a>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="site__col" style="flex: 0 1 260px;">
+                        <div
+                            class="beeteam368-searchbox-wrap beeteam368-searchbox-wrap-control flex-row-control flex-vertical-middle ">
+                            <form action="https://vm.beeteam368.net/" method="get" class="beeteam368-searchform">
+                                <input id="beeteam368-searchtext"
+                                    class="beeteam368-searchtext beeteam368-searchtext-control" autocomplete="off"
+                                    type="text" placeholder="Type and hit enter ..." name="s" value="">
+                                <span
+                                    class="beetam368-back-focus beetam368-back-focus-control flex-row-control flex-vertical-middle flex-row-center"><i
+                                        class="fas fa-arrow-left"></i></span>
+                                <div class="beeteam368-search-process floatingBarsG">
+                                    <div class="blockG rotateG_01"></div>
+                                    <div class="blockG rotateG_02"></div>
+                                    <div class="blockG rotateG_03"></div>
+                                    <div class="blockG rotateG_04"></div>
+                                    <div class="blockG rotateG_05"></div>
+                                    <div class="blockG rotateG_06"></div>
+                                    <div class="blockG rotateG_07"></div>
+                                    <div class="blockG rotateG_08"></div>
+                                </div>
+                                <div class="beeteam368-search-suggestions">
+                                    <a data-href="https://vm.beeteam368.net/" href="https://vm.beeteam368.net/?s"
+                                        class="beeteam368-suggestion-item flex-row-control flex-vertical-middle beeteam368-suggestion-item-keyword-block beeteam368-suggestion-item-keyword-block-control show-block">
+                                        <span class="beeteam368-icon-item small-item primary-color"><i
+                                                class="fas fa-search"></i></span>
+                                        <span class="beeteam368-suggestion-item-content search-with-keyword">
+                                            <span class="beeteam368-suggestion-item-title h6 h-light">Search For: <span
+                                                    class="beeteam368-sg-keyword beeteam368-sg-keyword-control font-weight-bold">Movie
+                                                    should be distinctly</span></span>
+                                        </span>
+                                        <span class="beeteam368-suggestion-item-content search-with-default">
+                                            <span class="beeteam368-suggestion-item-title h6 font-weight-bold">Please
+                                                enter a search term in the search box.</span>
+                                        </span>
+                                    </a>
+                                    <div class="beeteam368-sg-new-posts beeteam368-live-search-control">
+                                        <h5 class="beeteam368-sg-new-posts-heading sg-heading-default">Do Not Miss</h5>
+                                        <h5 class="beeteam368-sg-new-posts-heading sg-heading-dynamic">Search
+                                            Suggestions</h5>
+                                        <a href="https://vm.beeteam368.net/video/shadow-company-trailer/"
+                                            class="beeteam368-suggestion-item beeteam368-suggestion-item-default flex-row-control flex-vertical-middle">
+                                            <span class="beeteam368-icon-item small-item"><i
+                                                    class="fas fa-quote-left"></i></span>
+                                            <span class="beeteam368-suggestion-item-content">
+                                                <span class="beeteam368-suggestion-item-title h6 h-light">Shadow Company
+                                                    Trailer</span>
+                                                <span class="beeteam368-suggestion-item-tax font-size-10">Video</span>
+                                            </span>
+                                            <span class="beeteam368-suggestion-item-image"><img loading="lazy"
+                                                    width="150" height="150"
+                                                    src="https://vm.beeteam368.net/wp-content/uploads/2021/12/call-of-duty-10-150x150.jpg"
+                                                    class="blog-img" alt="" decoding="async"
+                                                    srcset="https://vm.beeteam368.net/wp-content/uploads/2021/12/call-of-duty-10-150x150.jpg 150w, https://vm.beeteam368.net/wp-content/uploads/2021/12/call-of-duty-10-324x324.jpg 324w, https://vm.beeteam368.net/wp-content/uploads/2021/12/call-of-duty-10-100x100.jpg 100w, https://vm.beeteam368.net/wp-content/uploads/2021/12/call-of-duty-10-300x300.jpg 300w, https://vm.beeteam368.net/wp-content/uploads/2021/12/call-of-duty-10-420x420.jpg 420w, https://vm.beeteam368.net/wp-content/uploads/2021/12/call-of-duty-10-800x800.jpg 800w"
+                                                    sizes="(max-width: 150px) 100vw, 150px"></span>
+                                        </a>
+                                        <a href="https://vm.beeteam368.net/playlist/dexter-new-blood/"
+                                            class="beeteam368-suggestion-item beeteam368-suggestion-item-default flex-row-control flex-vertical-middle">
+                                            <span class="beeteam368-icon-item small-item"><i
+                                                    class="fas fa-quote-left"></i></span>
+                                            <span class="beeteam368-suggestion-item-content">
+                                                <span class="beeteam368-suggestion-item-title h6 h-light">Dexter: New
+                                                    Blood</span>
+                                                <span
+                                                    class="beeteam368-suggestion-item-tax font-size-10">Playlist</span>
+                                            </span>
+                                            <span class="beeteam368-suggestion-item-image"><img loading="lazy"
+                                                    width="150" height="150"
+                                                    src="https://vm.beeteam368.net/wp-content/uploads/2021/12/austin-neill-hgO1wFPXl3I-unsplash-150x150.jpg"
+                                                    class="blog-img" alt="" decoding="async"
+                                                    srcset="https://vm.beeteam368.net/wp-content/uploads/2021/12/austin-neill-hgO1wFPXl3I-unsplash-150x150.jpg 150w, https://vm.beeteam368.net/wp-content/uploads/2021/12/austin-neill-hgO1wFPXl3I-unsplash-324x324.jpg 324w, https://vm.beeteam368.net/wp-content/uploads/2021/12/austin-neill-hgO1wFPXl3I-unsplash-100x100.jpg 100w, https://vm.beeteam368.net/wp-content/uploads/2021/12/austin-neill-hgO1wFPXl3I-unsplash-300x300.jpg 300w, https://vm.beeteam368.net/wp-content/uploads/2021/12/austin-neill-hgO1wFPXl3I-unsplash-420x420.jpg 420w, https://vm.beeteam368.net/wp-content/uploads/2021/12/austin-neill-hgO1wFPXl3I-unsplash-800x800.jpg 800w"
+                                                    sizes="(max-width: 150px) 100vw, 150px"></span>
+                                        </a>
+                                        <a href="https://vm.beeteam368.net/video/google-drive-iframe/"
+                                            class="beeteam368-suggestion-item beeteam368-suggestion-item-default flex-row-control flex-vertical-middle">
+                                            <span class="beeteam368-icon-item small-item"><i
+                                                    class="fas fa-quote-left"></i></span>
+                                            <span class="beeteam368-suggestion-item-content">
+                                                <span class="beeteam368-suggestion-item-title h6 h-light">Google Drive
+                                                    (iframe)</span>
+                                                <span class="beeteam368-suggestion-item-tax font-size-10">Video</span>
+                                            </span>
+                                            <span class="beeteam368-suggestion-item-image"><img loading="lazy"
+                                                    width="150" height="150"
+                                                    src="https://vm.beeteam368.net/wp-content/uploads/2021/11/solotravelgoals-7kLufxYoqWk-unsplash-150x150.jpg"
+                                                    class="blog-img" alt="" decoding="async"
+                                                    srcset="https://vm.beeteam368.net/wp-content/uploads/2021/11/solotravelgoals-7kLufxYoqWk-unsplash-150x150.jpg 150w, https://vm.beeteam368.net/wp-content/uploads/2021/11/solotravelgoals-7kLufxYoqWk-unsplash-324x324.jpg 324w, https://vm.beeteam368.net/wp-content/uploads/2021/11/solotravelgoals-7kLufxYoqWk-unsplash-100x100.jpg 100w, https://vm.beeteam368.net/wp-content/uploads/2021/11/solotravelgoals-7kLufxYoqWk-unsplash-300x300.jpg 300w, https://vm.beeteam368.net/wp-content/uploads/2021/11/solotravelgoals-7kLufxYoqWk-unsplash-420x420.jpg 420w, https://vm.beeteam368.net/wp-content/uploads/2021/11/solotravelgoals-7kLufxYoqWk-unsplash-800x800.jpg 800w"
+                                                    sizes="(max-width: 150px) 100vw, 150px"></span>
+                                        </a>
+                                        <a href="https://vm.beeteam368.net/video/unforgettable-goals-in-football/"
+                                            class="beeteam368-suggestion-item beeteam368-suggestion-item-default flex-row-control flex-vertical-middle">
+                                            <span class="beeteam368-icon-item small-item"><i
+                                                    class="fas fa-quote-left"></i></span>
+                                            <span class="beeteam368-suggestion-item-content">
+                                                <span class="beeteam368-suggestion-item-title h6 h-light">Unforgettable
+                                                    Goals in Football</span>
+                                                <span class="beeteam368-suggestion-item-tax font-size-10">Video</span>
+                                            </span>
+                                            <span class="beeteam368-suggestion-item-image"><img loading="lazy"
+                                                    width="150" height="150"
+                                                    src="https://vm.beeteam368.net/wp-content/uploads/2021/12/mario-klassen-70YxSTWa2Zw-unsplash-150x150.jpg"
+                                                    class="blog-img" alt="" decoding="async"
+                                                    srcset="https://vm.beeteam368.net/wp-content/uploads/2021/12/mario-klassen-70YxSTWa2Zw-unsplash-150x150.jpg 150w, https://vm.beeteam368.net/wp-content/uploads/2021/12/mario-klassen-70YxSTWa2Zw-unsplash-324x324.jpg 324w, https://vm.beeteam368.net/wp-content/uploads/2021/12/mario-klassen-70YxSTWa2Zw-unsplash-100x100.jpg 100w, https://vm.beeteam368.net/wp-content/uploads/2021/12/mario-klassen-70YxSTWa2Zw-unsplash-300x300.jpg 300w, https://vm.beeteam368.net/wp-content/uploads/2021/12/mario-klassen-70YxSTWa2Zw-unsplash-420x420.jpg 420w, https://vm.beeteam368.net/wp-content/uploads/2021/12/mario-klassen-70YxSTWa2Zw-unsplash-800x800.jpg 800w"
+                                                    sizes="(max-width: 150px) 100vw, 150px"></span>
+                                        </a>
+                                        <a href="https://vm.beeteam368.net/audio/red-roses/"
+                                            class="beeteam368-suggestion-item beeteam368-suggestion-item-default flex-row-control flex-vertical-middle">
+                                            <span class="beeteam368-icon-item small-item"><i
+                                                    class="fas fa-quote-left"></i></span>
+                                            <span class="beeteam368-suggestion-item-content">
+                                                <span class="beeteam368-suggestion-item-title h6 h-light">Red
+                                                    Roses</span>
+                                                <span class="beeteam368-suggestion-item-tax font-size-10">Audio</span>
+                                            </span>
+                                            <span class="beeteam368-suggestion-item-image"><img loading="lazy"
+                                                    width="150" height="150"
+                                                    src="https://vm.beeteam368.net/wp-content/uploads/2021/12/elice-moore-E-AUpYXbjM-unsplash-150x150.jpg"
+                                                    class="blog-img" alt="" decoding="async"
+                                                    srcset="https://vm.beeteam368.net/wp-content/uploads/2021/12/elice-moore-E-AUpYXbjM-unsplash-150x150.jpg 150w, https://vm.beeteam368.net/wp-content/uploads/2021/12/elice-moore-E-AUpYXbjM-unsplash-324x324.jpg 324w, https://vm.beeteam368.net/wp-content/uploads/2021/12/elice-moore-E-AUpYXbjM-unsplash-100x100.jpg 100w, https://vm.beeteam368.net/wp-content/uploads/2021/12/elice-moore-E-AUpYXbjM-unsplash-300x300.jpg 300w, https://vm.beeteam368.net/wp-content/uploads/2021/12/elice-moore-E-AUpYXbjM-unsplash-420x420.jpg 420w, https://vm.beeteam368.net/wp-content/uploads/2021/12/elice-moore-E-AUpYXbjM-unsplash-800x800.jpg 800w"
+                                                    sizes="(max-width: 150px) 100vw, 150px"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="beeteam368-social-account-sub-nav site__col auto-width">
+                        <div class="beeteam368-social-account-wrap flex-row-control">
+                            <div
+                                class="beeteam368-icon-item beeteam368-dark-light-btn beeteam368-i-dark-light-btn-control">
+                                <span class="light-bg-layer"></span>
+                                <span class="dark-bg-layer"></span>
+                                <span class="light-layer"><i class="fas fa-sun"></i></span>
+                                <span class="dark-layer"><i class="far fa-sun"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="beeteam368-main-menu beeteam368-main-menu-control sticky-menu sticky-menu-control">
+            <div class="site__container main__container-control beeteam368-menu-container-mobile">
+                <div class="site__row flex-row-control flex-vertical-middle beeteam368-main-menu-row">
+                    <div class="site__col auto-width beeteam368-mobile-menu-btn">
+                        <div class="oc-mb-mn-btn oc-mb-mn-btn-control ">
+                            <div class="bar top"></div>
+                            <div class="bar middle"></div>
+                            <div class="bar bottom"></div>
+                        </div>
+                    </div>
+
+                    <div class="beeteam368-main-nav site__col auto-width">
+                        <ul class="flex-row-control nav-font menu-items-lyt menu-items-lyt-control">
+                            <li id="menu-item-21"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor  menu-item-21">
+                                <a href="https://vm.beeteam368.net/">Home</a>
+
+                            </li>
+                            <li id="menu-item-22"
+                                class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-22">
+                                <a href="#">Video</a>
+
+                            </li>
+                            <li id="menu-item-23"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23">
+                                <a href="#">Audio</a>
+
+                            </li>
+                            <li id="menu-item-65"
+                                class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-65">
+                                <a href="#">Sell Media</a>
+
+                            </li>
+                            <li id="menu-item-4003"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4003">
+                                <a href="#">BuddyPress</a>
+                                <ul class="sub-menu beeteam368-megamenu-sub">
+                                    <li id="menu-item-4004"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4004">
+                                        <a href="https://vm.beeteam368.net/activity/">Activity</a>
+                                    </li>
+                                    <li id="menu-item-4005"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4005">
+                                        <a href="https://vm.beeteam368.net/groups/">Groups</a>
+                                    </li>
+                                    <li id="menu-item-4006"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4006">
+                                        <a href="https://vm.beeteam368.net/members/">Members</a>
+                                    </li>
+                                    <li id="menu-item-4007"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4007">
+                                        <a href="https://vm.beeteam368.net/members/andre/">Profile</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="menu-item-67"
+                                class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-67">
+                                <a href="#">Elements</a>
+
+                            </li>
+                            <li id="menu-item-74"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-74">
+                                <a href="#">Channel</a>
+
+                            </li>
+                            <li id="menu-item-66-mgmn"
+                                class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-66 beeteam368-megamenu beeteam368-megamenu-control">
+                                <a href="#">Mega Menu</a>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="site__col" style="flex: 0 1 260px;">
+                        <div
+                            class="beeteam368-searchbox-wrap beeteam368-searchbox-wrap-control flex-row-control flex-vertical-middle ">
+                            <form action="https://vm.beeteam368.net/" method="get" class="beeteam368-searchform">
+                                <input id="beeteam368-searchtext"
+                                    class="beeteam368-searchtext beeteam368-searchtext-control" autocomplete="off"
+                                    type="text" placeholder="Type and hit enter ..." name="s" value="">
+                                <span
+                                    class="beetam368-back-focus beetam368-back-focus-control flex-row-control flex-vertical-middle flex-row-center"><i
+                                        class="fas fa-arrow-left"></i></span>
+                                <div class="beeteam368-search-process floatingBarsG">
+                                    <div class="blockG rotateG_01"></div>
+                                    <div class="blockG rotateG_02"></div>
+                                    <div class="blockG rotateG_03"></div>
+                                    <div class="blockG rotateG_04"></div>
+                                    <div class="blockG rotateG_05"></div>
+                                    <div class="blockG rotateG_06"></div>
+                                    <div class="blockG rotateG_07"></div>
+                                    <div class="blockG rotateG_08"></div>
+                                </div>
+                                <div class="beeteam368-search-suggestions">
+                                    <a data-href="https://vm.beeteam368.net/" href="https://vm.beeteam368.net/?s"
+                                        class="beeteam368-suggestion-item flex-row-control flex-vertical-middle beeteam368-suggestion-item-keyword-block beeteam368-suggestion-item-keyword-block-control show-block">
+                                        <span class="beeteam368-icon-item small-item primary-color"><i
+                                                class="fas fa-search"></i></span>
+                                        <span class="beeteam368-suggestion-item-content search-with-keyword">
+                                            <span class="beeteam368-suggestion-item-title h6 h-light">Search For: <span
+                                                    class="beeteam368-sg-keyword beeteam368-sg-keyword-control font-weight-bold">Movie
+                                                    should be distinctly</span></span>
+                                        </span>
+                                        <span class="beeteam368-suggestion-item-content search-with-default">
+                                            <span class="beeteam368-suggestion-item-title h6 font-weight-bold">Please
+                                                enter a search term in the search box.</span>
+                                        </span>
+                                    </a>
+                                    <div class="beeteam368-sg-new-posts beeteam368-live-search-control">
+                                        <h5 class="beeteam368-sg-new-posts-heading sg-heading-default">Do Not Miss</h5>
+                                        <h5 class="beeteam368-sg-new-posts-heading sg-heading-dynamic">Search
+                                            Suggestions</h5>
+                                        <a href="https://vm.beeteam368.net/video/shadow-company-trailer/"
+                                            class="beeteam368-suggestion-item beeteam368-suggestion-item-default flex-row-control flex-vertical-middle">
+                                            <span class="beeteam368-icon-item small-item"><i
+                                                    class="fas fa-quote-left"></i></span>
+                                            <span class="beeteam368-suggestion-item-content">
+                                                <span class="beeteam368-suggestion-item-title h6 h-light">Shadow Company
+                                                    Trailer</span>
+                                                <span class="beeteam368-suggestion-item-tax font-size-10">Video</span>
+                                            </span>
+                                            <span class="beeteam368-suggestion-item-image"><img loading="lazy"
+                                                    width="150" height="150"
+                                                    src="https://vm.beeteam368.net/wp-content/uploads/2021/12/call-of-duty-10-150x150.jpg"
+                                                    class="blog-img" alt="" decoding="async"
+                                                    srcset="https://vm.beeteam368.net/wp-content/uploads/2021/12/call-of-duty-10-150x150.jpg 150w, https://vm.beeteam368.net/wp-content/uploads/2021/12/call-of-duty-10-324x324.jpg 324w, https://vm.beeteam368.net/wp-content/uploads/2021/12/call-of-duty-10-100x100.jpg 100w, https://vm.beeteam368.net/wp-content/uploads/2021/12/call-of-duty-10-300x300.jpg 300w, https://vm.beeteam368.net/wp-content/uploads/2021/12/call-of-duty-10-420x420.jpg 420w, https://vm.beeteam368.net/wp-content/uploads/2021/12/call-of-duty-10-800x800.jpg 800w"
+                                                    sizes="(max-width: 150px) 100vw, 150px"></span>
+                                        </a>
+                                        <a href="https://vm.beeteam368.net/playlist/dexter-new-blood/"
+                                            class="beeteam368-suggestion-item beeteam368-suggestion-item-default flex-row-control flex-vertical-middle">
+                                            <span class="beeteam368-icon-item small-item"><i
+                                                    class="fas fa-quote-left"></i></span>
+                                            <span class="beeteam368-suggestion-item-content">
+                                                <span class="beeteam368-suggestion-item-title h6 h-light">Dexter: New
+                                                    Blood</span>
+                                                <span
+                                                    class="beeteam368-suggestion-item-tax font-size-10">Playlist</span>
+                                            </span>
+                                            <span class="beeteam368-suggestion-item-image"><img loading="lazy"
+                                                    width="150" height="150"
+                                                    src="https://vm.beeteam368.net/wp-content/uploads/2021/12/austin-neill-hgO1wFPXl3I-unsplash-150x150.jpg"
+                                                    class="blog-img" alt="" decoding="async"
+                                                    srcset="https://vm.beeteam368.net/wp-content/uploads/2021/12/austin-neill-hgO1wFPXl3I-unsplash-150x150.jpg 150w, https://vm.beeteam368.net/wp-content/uploads/2021/12/austin-neill-hgO1wFPXl3I-unsplash-324x324.jpg 324w, https://vm.beeteam368.net/wp-content/uploads/2021/12/austin-neill-hgO1wFPXl3I-unsplash-100x100.jpg 100w, https://vm.beeteam368.net/wp-content/uploads/2021/12/austin-neill-hgO1wFPXl3I-unsplash-300x300.jpg 300w, https://vm.beeteam368.net/wp-content/uploads/2021/12/austin-neill-hgO1wFPXl3I-unsplash-420x420.jpg 420w, https://vm.beeteam368.net/wp-content/uploads/2021/12/austin-neill-hgO1wFPXl3I-unsplash-800x800.jpg 800w"
+                                                    sizes="(max-width: 150px) 100vw, 150px"></span>
+                                        </a>
+                                        <a href="https://vm.beeteam368.net/video/google-drive-iframe/"
+                                            class="beeteam368-suggestion-item beeteam368-suggestion-item-default flex-row-control flex-vertical-middle">
+                                            <span class="beeteam368-icon-item small-item"><i
+                                                    class="fas fa-quote-left"></i></span>
+                                            <span class="beeteam368-suggestion-item-content">
+                                                <span class="beeteam368-suggestion-item-title h6 h-light">Google Drive
+                                                    (iframe)</span>
+                                                <span class="beeteam368-suggestion-item-tax font-size-10">Video</span>
+                                            </span>
+                                            <span class="beeteam368-suggestion-item-image"><img loading="lazy"
+                                                    width="150" height="150"
+                                                    src="https://vm.beeteam368.net/wp-content/uploads/2021/11/solotravelgoals-7kLufxYoqWk-unsplash-150x150.jpg"
+                                                    class="blog-img" alt="" decoding="async"
+                                                    srcset="https://vm.beeteam368.net/wp-content/uploads/2021/11/solotravelgoals-7kLufxYoqWk-unsplash-150x150.jpg 150w, https://vm.beeteam368.net/wp-content/uploads/2021/11/solotravelgoals-7kLufxYoqWk-unsplash-324x324.jpg 324w, https://vm.beeteam368.net/wp-content/uploads/2021/11/solotravelgoals-7kLufxYoqWk-unsplash-100x100.jpg 100w, https://vm.beeteam368.net/wp-content/uploads/2021/11/solotravelgoals-7kLufxYoqWk-unsplash-300x300.jpg 300w, https://vm.beeteam368.net/wp-content/uploads/2021/11/solotravelgoals-7kLufxYoqWk-unsplash-420x420.jpg 420w, https://vm.beeteam368.net/wp-content/uploads/2021/11/solotravelgoals-7kLufxYoqWk-unsplash-800x800.jpg 800w"
+                                                    sizes="(max-width: 150px) 100vw, 150px"></span>
+                                        </a>
+                                        <a href="https://vm.beeteam368.net/video/unforgettable-goals-in-football/"
+                                            class="beeteam368-suggestion-item beeteam368-suggestion-item-default flex-row-control flex-vertical-middle">
+                                            <span class="beeteam368-icon-item small-item"><i
+                                                    class="fas fa-quote-left"></i></span>
+                                            <span class="beeteam368-suggestion-item-content">
+                                                <span class="beeteam368-suggestion-item-title h6 h-light">Unforgettable
+                                                    Goals in Football</span>
+                                                <span class="beeteam368-suggestion-item-tax font-size-10">Video</span>
+                                            </span>
+                                            <span class="beeteam368-suggestion-item-image"><img loading="lazy"
+                                                    width="150" height="150"
+                                                    src="https://vm.beeteam368.net/wp-content/uploads/2021/12/mario-klassen-70YxSTWa2Zw-unsplash-150x150.jpg"
+                                                    class="blog-img" alt="" decoding="async"
+                                                    srcset="https://vm.beeteam368.net/wp-content/uploads/2021/12/mario-klassen-70YxSTWa2Zw-unsplash-150x150.jpg 150w, https://vm.beeteam368.net/wp-content/uploads/2021/12/mario-klassen-70YxSTWa2Zw-unsplash-324x324.jpg 324w, https://vm.beeteam368.net/wp-content/uploads/2021/12/mario-klassen-70YxSTWa2Zw-unsplash-100x100.jpg 100w, https://vm.beeteam368.net/wp-content/uploads/2021/12/mario-klassen-70YxSTWa2Zw-unsplash-300x300.jpg 300w, https://vm.beeteam368.net/wp-content/uploads/2021/12/mario-klassen-70YxSTWa2Zw-unsplash-420x420.jpg 420w, https://vm.beeteam368.net/wp-content/uploads/2021/12/mario-klassen-70YxSTWa2Zw-unsplash-800x800.jpg 800w"
+                                                    sizes="(max-width: 150px) 100vw, 150px"></span>
+                                        </a>
+                                        <a href="https://vm.beeteam368.net/audio/red-roses/"
+                                            class="beeteam368-suggestion-item beeteam368-suggestion-item-default flex-row-control flex-vertical-middle">
+                                            <span class="beeteam368-icon-item small-item"><i
+                                                    class="fas fa-quote-left"></i></span>
+                                            <span class="beeteam368-suggestion-item-content">
+                                                <span class="beeteam368-suggestion-item-title h6 h-light">Red
+                                                    Roses</span>
+                                                <span class="beeteam368-suggestion-item-tax font-size-10">Audio</span>
+                                            </span>
+                                            <span class="beeteam368-suggestion-item-image"><img loading="lazy"
+                                                    width="150" height="150"
+                                                    src="https://vm.beeteam368.net/wp-content/uploads/2021/12/elice-moore-E-AUpYXbjM-unsplash-150x150.jpg"
+                                                    class="blog-img" alt="" decoding="async"
+                                                    srcset="https://vm.beeteam368.net/wp-content/uploads/2021/12/elice-moore-E-AUpYXbjM-unsplash-150x150.jpg 150w, https://vm.beeteam368.net/wp-content/uploads/2021/12/elice-moore-E-AUpYXbjM-unsplash-324x324.jpg 324w, https://vm.beeteam368.net/wp-content/uploads/2021/12/elice-moore-E-AUpYXbjM-unsplash-100x100.jpg 100w, https://vm.beeteam368.net/wp-content/uploads/2021/12/elice-moore-E-AUpYXbjM-unsplash-300x300.jpg 300w, https://vm.beeteam368.net/wp-content/uploads/2021/12/elice-moore-E-AUpYXbjM-unsplash-420x420.jpg 420w, https://vm.beeteam368.net/wp-content/uploads/2021/12/elice-moore-E-AUpYXbjM-unsplash-800x800.jpg 800w"
+                                                    sizes="(max-width: 150px) 100vw, 150px"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="beeteam368-social-account-sub-nav site__col auto-width">
+                        <div class="beeteam368-social-account-wrap flex-row-control">
+                            <div
+                                class="beeteam368-icon-item beeteam368-dark-light-btn beeteam368-i-dark-light-btn-control">
+                                <span class="light-bg-layer"></span>
+                                <span class="dark-bg-layer"></span>
+                                <span class="light-layer"><i class="fas fa-sun"></i></span>
+                                <span class="dark-layer"><i class="far fa-sun"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+    <!-- ========== Start content ========== -->
+    <div id="beeteam368-primary-cw" class="beeteam368-primary-cw">
+        <div class="site__container main__container-control">
+            <div id="sidebar-direction" class="site__row flex-row-control sidebar-direction">
+                <main id="main-content" class="site__col main-content global-post-page-content">
+                    <article id="post-40" class="post-40 page type-page status-publish hentry">
+                        <header class="entry-header single-page-title">
+                            <h1 class="entry-title h1-single">Cart</h1>
+                        </header>
+                        <div class="entry-content">
+                            <div data-block-name="woocommerce/cart"
+                                class="wp-block-woocommerce-cart alignwide is-loading">
+                                <div data-block-name="woocommerce/filled-cart-block"
+                                    class="wp-block-woocommerce-filled-cart-block">
+                                    <div data-block-name="woocommerce/cart-items-block"
+                                        class="wp-block-woocommerce-cart-items-block">
+                                        <div data-block-name="woocommerce/cart-line-items-block"
+                                            class="wp-block-woocommerce-cart-line-items-block"></div>
+                                        <div data-block-name="woocommerce/cart-cross-sells-block"
+                                            class="wp-block-woocommerce-cart-cross-sells-block">
+                                            <h2 class="wp-block-heading has-large-font-size">You may be interested in…
+                                            </h2>
+                                            <div data-block-name="woocommerce/cart-cross-sells-products-block"
+                                                class="wp-block-woocommerce-cart-cross-sells-products-block"></div>
+                                        </div>
+                                    </div>
+                                    <div data-block-name="woocommerce/cart-totals-block"
+                                        class="wp-block-woocommerce-cart-totals-block">
+                                        <div data-block-name="woocommerce/cart-order-summary-block"
+                                            class="wp-block-woocommerce-cart-order-summary-block">
+                                            <div data-block-name="woocommerce/cart-order-summary-heading-block"
+                                                class="wp-block-woocommerce-cart-order-summary-heading-block"></div>
+                                            <div data-block-name="woocommerce/cart-order-summary-coupon-form-block"
+                                                class="wp-block-woocommerce-cart-order-summary-coupon-form-block"></div>
+                                            <div data-block-name="woocommerce/cart-order-summary-subtotal-block"
+                                                class="wp-block-woocommerce-cart-order-summary-subtotal-block"></div>
+                                            <div data-block-name="woocommerce/cart-order-summary-fee-block"
+                                                class="wp-block-woocommerce-cart-order-summary-fee-block"></div>
+                                            <div data-block-name="woocommerce/cart-order-summary-discount-block"
+                                                class="wp-block-woocommerce-cart-order-summary-discount-block"></div>
+                                            <div data-block-name="woocommerce/cart-order-summary-shipping-block"
+                                                class="wp-block-woocommerce-cart-order-summary-shipping-block"></div>
+                                            <div data-block-name="woocommerce/cart-order-summary-taxes-block"
+                                                class="wp-block-woocommerce-cart-order-summary-taxes-block"></div>
+                                        </div>
+                                        <div data-block-name="woocommerce/cart-express-payment-block"
+                                            class="wp-block-woocommerce-cart-express-payment-block"></div>
+                                        <div data-block-name="woocommerce/proceed-to-checkout-block"
+                                            class="wp-block-woocommerce-proceed-to-checkout-block"></div>
+                                        <div data-block-name="woocommerce/cart-accepted-payment-methods-block"
+                                            class="wp-block-woocommerce-cart-accepted-payment-methods-block"></div>
+                                    </div>
+                                </div>
+                                <div data-block-name="woocommerce/empty-cart-block"
+                                    class="wp-block-woocommerce-empty-cart-block">
+                                    <h2
+                                        class="wp-block-heading has-text-align-center with-empty-cart-icon wc-block-cart__empty-cart__title">
+                                        Your cart is currently empty!</h2>
+                                    <hr class="wp-block-separator has-alpha-channel-opacity is-style-dots" />
+                                    <h2 class="wp-block-heading has-text-align-center">New in store</h2>
+                                    <div data-block-name="woocommerce/product-new" data-columns="4" data-rows="1"
+                                        class="wc-block-grid wp-block-product-new wc-block-product-new has-4-columns">
+                                        <ul class="wc-block-grid__products">
+                                            <li class="wc-block-grid__product">
+                                                <a href="https://rvxoxo.com/product/ginas-secret-bikini-book/"
+                                                    class="wc-block-grid__product-link">
+                                                    <div class="wc-block-grid__product-onsale">
+                                                        <span aria-hidden="true">Sale</span>
+                                                        <span class="screen-reader-text">Product on sale</span>
+                                                    </div>
+                                                    <div class="wc-block-grid__product-image">
+                                                        <img loading="lazy" decoding="async" width="324" height="324"
+                                                            src="https://rvxoxo.com/wp-content/uploads/2024/04/bikini-324x324.png"
+                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                                            alt="Gina’s secret Bikini-book"
+                                                            srcset="https://rvxoxo.com/wp-content/uploads/2024/04/bikini-324x324.png 324w, https://rvxoxo.com/wp-content/uploads/2024/04/bikini-150x150.png 150w, https://rvxoxo.com/wp-content/uploads/2024/04/bikini-300x300.png 300w, https://rvxoxo.com/wp-content/uploads/2024/04/bikini-420x420.png 420w, https://rvxoxo.com/wp-content/uploads/2024/04/bikini-100x100.png 100w"
+                                                            sizes="(max-width: 324px) 100vw, 324px" />
+                                                    </div>
+                                                    <div class="wc-block-grid__product-title">Gina’s secret Bikini-book
+                                                    </div>
+                                                </a>
+                                                <div class="wc-block-grid__product-price price">
+                                                    <del aria-hidden="true">
+                                                        <span class="woocommerce-Price-amount amount">
+                                                            <span
+                                                                class="woocommerce-Price-currencySymbol">&#078;&#084;&#036;</span>
+                                                            30
+                                                        </span>
+                                                    </del>
+                                                    <ins>
+                                                        <span class="woocommerce-Price-amount amount">
+                                                            <span
+                                                                class="woocommerce-Price-currencySymbol">&#078;&#084;&#036;</span>
+                                                            25
+                                                        </span>
+                                                    </ins>
+                                                </div>
+                                                <div class="wp-block-button wc-block-grid__product-add-to-cart">
+                                                    <a href="?add-to-cart=5535"
+                                                        aria-label="Add to cart: &ldquo;Gina’s secret Bikini-book&rdquo;"
+                                                        data-quantity="1" data-product_id="5535" data-product_sku=""
+                                                        data-price="25" rel="nofollow"
+                                                        class="wp-block-button__link  add_to_cart_button ajax_add_to_cart">Add
+                                                        to cart</a>
+                                                </div>
+                                            </li>
+                                            <li class="wc-block-grid__product">
+                                                <a href="https://rvxoxo.com/product/2024-rv-digital-look-book/"
+                                                    class="wc-block-grid__product-link">
+                                                    <div class="wc-block-grid__product-onsale">
+                                                        <span aria-hidden="true">Sale</span>
+                                                        <span class="screen-reader-text">Product on sale</span>
+                                                    </div>
+                                                    <div class="wc-block-grid__product-image">
+                                                        <img loading="lazy" decoding="async" width="324" height="324"
+                                                            src="https://rvxoxo.com/wp-content/uploads/2024/01/thum2-324x324.png"
+                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                                            alt="2024&#039; RV digital look-book Sample"
+                                                            srcset="https://rvxoxo.com/wp-content/uploads/2024/01/thum2-324x324.png 324w, https://rvxoxo.com/wp-content/uploads/2024/01/thum2-150x150.png 150w, https://rvxoxo.com/wp-content/uploads/2024/01/thum2-300x300.png 300w, https://rvxoxo.com/wp-content/uploads/2024/01/thum2-420x420.png 420w, https://rvxoxo.com/wp-content/uploads/2024/01/thum2-100x100.png 100w"
+                                                            sizes="(max-width: 324px) 100vw, 324px" />
+                                                    </div>
+                                                    <div class="wc-block-grid__product-title">2024 &#8242;RV digital
+                                                        look-book Sample</div>
+                                                </a>
+                                                <div class="wc-block-grid__product-price price">
+                                                    <del aria-hidden="true">
+                                                        <span class="woocommerce-Price-amount amount">
+                                                            <span
+                                                                class="woocommerce-Price-currencySymbol">&#078;&#084;&#036;</span>
+                                                            100
+                                                        </span>
+                                                    </del>
+                                                    <ins>
+                                                        <span class="woocommerce-Price-amount amount">
+                                                            <span
+                                                                class="woocommerce-Price-currencySymbol">&#078;&#084;&#036;</span>
+                                                            3
+                                                        </span>
+                                                    </ins>
+                                                </div>
+                                                <div class="wc-block-grid__product-rating">
+                                                    <div class="star-rating" role="img"
+                                                        aria-label="Rated 5.00 out of 5">
+                                                        <span style="width:100%">
+                                                            Rated <strong class="rating">5.00</strong>
+                                                            out of 5 based on <span class="rating">1</span>
+                                                            customer rating
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="wp-block-button wc-block-grid__product-add-to-cart">
+                                                    <a href="?add-to-cart=4012"
+                                                        aria-label="Add to cart: &ldquo;2024&#039; RV digital look-book Sample&rdquo;"
+                                                        data-quantity="1" data-product_id="4012" data-product_sku=""
+                                                        data-price="3" rel="nofollow"
+                                                        class="wp-block-button__link  add_to_cart_button ajax_add_to_cart">Add
+                                                        to cart</a>
+                                                </div>
+                                            </li>
+                                            <li class="wc-block-grid__product">
+                                                <a href="https://rvxoxo.com/product/happy-cream/"
+                                                    class="wc-block-grid__product-link">
+                                                    <div class="wc-block-grid__product-image">
+                                                        <img loading="lazy" decoding="async" width="324" height="324"
+                                                            src="https://rvxoxo.com/wp-content/uploads/2024/01/Lovenjoy-324x324.png"
+                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                                            alt="Happy cream"
+                                                            srcset="https://rvxoxo.com/wp-content/uploads/2024/01/Lovenjoy-324x324.png 324w, https://rvxoxo.com/wp-content/uploads/2024/01/Lovenjoy-150x150.png 150w, https://rvxoxo.com/wp-content/uploads/2024/01/Lovenjoy-300x300.png 300w, https://rvxoxo.com/wp-content/uploads/2024/01/Lovenjoy-420x420.png 420w, https://rvxoxo.com/wp-content/uploads/2024/01/Lovenjoy-100x100.png 100w"
+                                                            sizes="(max-width: 324px) 100vw, 324px" />
+                                                    </div>
+                                                    <div class="wc-block-grid__product-title">Happy cream</div>
+                                                </a>
+                                                <div class="wc-block-grid__product-price price">
+                                                    <span class="woocommerce-Price-amount amount">
+                                                        <span
+                                                            class="woocommerce-Price-currencySymbol">&#078;&#084;&#036;</span>
+                                                        9
+                                                    </span>
+                                                </div>
+                                                <div class="wp-block-button wc-block-grid__product-add-to-cart">
+                                                    <a href="?add-to-cart=4010"
+                                                        aria-label="Add to cart: &ldquo;Happy cream&rdquo;"
+                                                        data-quantity="1" data-product_id="4010" data-product_sku=""
+                                                        data-price="9" rel="nofollow"
+                                                        class="wp-block-button__link  add_to_cart_button ajax_add_to_cart">Add
+                                                        to cart</a>
+                                                </div>
+                                            </li>
+                                            <li class="wc-block-grid__product">
+                                                <a href="https://rvxoxo.com/product/rv-meta-toy/"
+                                                    class="wc-block-grid__product-link">
+                                                    <div class="wc-block-grid__product-image">
+                                                        <img loading="lazy" decoding="async" width="324" height="324"
+                                                            src="https://rvxoxo.com/wp-content/uploads/2024/01/realverseToy-324x324.jpg"
+                                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                                            alt="RV META TOY"
+                                                            srcset="https://rvxoxo.com/wp-content/uploads/2024/01/realverseToy-324x324.jpg 324w, https://rvxoxo.com/wp-content/uploads/2024/01/realverseToy-150x150.jpg 150w, https://rvxoxo.com/wp-content/uploads/2024/01/realverseToy-300x300.jpg 300w, https://rvxoxo.com/wp-content/uploads/2024/01/realverseToy-420x420.jpg 420w, https://rvxoxo.com/wp-content/uploads/2024/01/realverseToy-800x800.jpg 800w, https://rvxoxo.com/wp-content/uploads/2024/01/realverseToy-100x100.jpg 100w"
+                                                            sizes="(max-width: 324px) 100vw, 324px" />
+                                                    </div>
+                                                    <div class="wc-block-grid__product-title">RV META TOY</div>
+                                                </a>
+                                                <div class="wc-block-grid__product-price price">
+                                                    <span class="woocommerce-Price-amount amount">
+                                                        <span
+                                                            class="woocommerce-Price-currencySymbol">&#078;&#084;&#036;</span>
+                                                        168
+                                                    </span>
+                                                </div>
+                                                <div class="wp-block-button wc-block-grid__product-add-to-cart">
+                                                    <a href="?add-to-cart=4008"
+                                                        aria-label="Add to cart: &ldquo;RV META TOY&rdquo;"
+                                                        data-quantity="1" data-product_id="4008" data-product_sku=""
+                                                        data-price="168" rel="nofollow"
+                                                        class="wp-block-button__link  add_to_cart_button ajax_add_to_cart">Add
+                                                        to cart</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== End content ========== -->
+
+
+
+
+    <!-- ========== Start footer ========== -->
+    <footer id="site-footer" class="site-footer">
+        <div class="footer-sidebar">
+            <div class="site__container main__container-control">
+                <div class="site__row flex-row-control footer-sidebar-row">
+                    <div id="text-2" class="site__col widget r-widget-control widget_text">
+                        <h2 class="h3 widget-title flex-row-control flex-vertical-middle"><span
+                                class="beeteam368-icon-item"><i class=" fas fa-play"></i></span><span
+                                class="widget-title-wrap">About VidMov<span class="wg-line"></span></span></h2>
+                        <div class="textwidget">
+                            <p>VidMov is a Responsive WordPress Theme best suitable for <strong>VIDEO, MOVIE, PODCAST,
+                                    NEWS, MAGAZINE, BLOG or REVIEW SITES</strong>.</p>
+                            <p><em>Each and every element has been tested to ensure it adapts to modern smartphones and
+                                    tablets.</em></p>
+                            <p><a class="btnn-default btnn-primary" style="margin-top: 12px;"
+                                    href="https://themeforest.net/item/vidmov-video-wordpress-theme/35542187">FIND OUT
+                                    MORE <i class="icon fas fa-angle-double-right"></i></a></p>
+                        </div>
+                    </div>
+                    <div id="nav_menu-2" class="site__col widget r-widget-control widget_nav_menu">
+                        <h2 class="h3 widget-title flex-row-control flex-vertical-middle"><span
+                                class="beeteam368-icon-item"><i class=" fas fa-list-ul"></i></span><span
+                                class="widget-title-wrap">Categories<span class="wg-line"></span></span></h2>
+                        <div class="menu-side-menu-container">
+                            <ul id="menu-side-menu-1" class="menu">
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-vidmov_video_category menu-item-80">
+                                    <a href="https://vm.beeteam368.net/video-category/gaming/">Gaming</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-vidmov_video_category menu-item-81">
+                                    <a href="https://vm.beeteam368.net/video-category/movies/">Movies</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-vidmov_video_category menu-item-82">
+                                    <a href="https://vm.beeteam368.net/video-category/sports/">Sports</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-vidmov_video_category menu-item-79">
+                                    <a href="https://vm.beeteam368.net/video-category/entertainment/">Entertainment</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-vidmov_audio_category menu-item-83">
+                                    <a href="https://vm.beeteam368.net/audio-category/music/">Music</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-vidmov_series_category menu-item-84">
+                                    <a href="https://vm.beeteam368.net/series-category/tv-shows/">TV Shows</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="nav_menu-3" class="site__col widget r-widget-control widget_nav_menu">
+                        <h2 class="h3 widget-title flex-row-control flex-vertical-middle"><span
+                                class="beeteam368-icon-item"><i class=" fas fa-info"></i></span><span
+                                class="widget-title-wrap">Information<span class="wg-line"></span></span></h2>
+                        <div class="menu-side-menu-container">
+                            <ul id="menu-side-menu-2" class="menu">
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-vidmov_video_category menu-item-80">
+                                    <a href="https://vm.beeteam368.net/video-category/gaming/">Gaming</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-vidmov_video_category menu-item-81">
+                                    <a href="https://vm.beeteam368.net/video-category/movies/">Movies</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-vidmov_video_category menu-item-82">
+                                    <a href="https://vm.beeteam368.net/video-category/sports/">Sports</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-vidmov_video_category menu-item-79">
+                                    <a href="https://vm.beeteam368.net/video-category/entertainment/">Entertainment</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-vidmov_audio_category menu-item-83">
+                                    <a href="https://vm.beeteam368.net/audio-category/music/">Music</a>
+                                </li>
+                                <li
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-vidmov_series_category menu-item-84">
+                                    <a href="https://vm.beeteam368.net/series-category/tv-shows/">TV Shows</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="custom_html-4" class="widget_text site__col widget r-widget-control widget_custom_html">
+                        <h2 class="h3 widget-title flex-row-control flex-vertical-middle"><span
+                                class="beeteam368-icon-item"><i class=" fas fa-tablet-alt"></i></span><span
+                                class="widget-title-wrap">Mobile Apps<span class="wg-line"></span></span></h2>
+                        <div class="textwidget custom-html-widget">
+                            <p>
+                                Download Now Mobile and enjoy it on your iPhone, iPad, and iPod touch... all from a
+                                modern mobile app powered by the VidMov Platform.
+                            </p>
+                            <div class="flex-row-control" style="margin:0 -8px;">
+                                <a href="#" style="display:block; width:50%; padding:8px;"><img
+                                        src="https://vm.beeteam368.net/wp-content/uploads/2021/11/app-store.png"
+                                        alt="Download In App Store" width="272" height="81"></a>
+                                <a href="#" style="display:block; width:50%; padding:8px;"><img
+                                        src="https://vm.beeteam368.net/wp-content/uploads/2021/11/google-play.png"
+                                        alt="Get It On Google Play" width="272" height="81" style="display:block;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="site__container main__container-control">
+                <div class="site__row">
+                    <div class="site__col">
+                        Copyright © 2024. Created by BeeTeam368. Powered by WordPress. </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== End footer ========== -->
+
+
+
+
+
+
+    <link rel="stylesheet" href="assets/css/report/report.css" />
+    <link rel="stylesheet" href="assets/user-submit-post/assets/playlist-submit.css" />
+    <link rel="stylesheet" href="assets/user-submit-post/assets/post-submit.css" />
+    <link rel="stylesheet" href="assets/live-streaming/assets/live-streaming.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+
+    <script src="assets/js/overlay-scrollbars/OverlayScrollbars.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/css/video/player.js"></script>
+    <script src="assets/css/channel/channel.js"></script>
+    <script src="assets/css/playlist/playlist.js"></script>
+    <script src="assets/css/series/series.js"></script>
+    <script src="assets/css/report/report.js"></script>
+    <script src="assets/css/watch-later/watch-later.js"></script>
+    <script src="assets/css/like-dislike/reactions.js"></script>
+    <script src="assets/pro-player/assets/pro-player.js"></script>
+    <script src="assets/virtual-gifts/assets/myCred-transfer.js"></script>
+    <script src="assets/user-submit-post/assets/playlist-submit.js"></script>
+    <script src="assets/user-submit-post/assets/post-submit.js"></script>
+    <script src="assets/login-register/assets/login-register.js"></script>
+    <script src="assets/mega-menu/assets/mega-menu.js"></script>
+    <script src="assets/live-search/assets/live-search.js"></script>
+    <script src="assets/pro-player/assets/time-stamp.js"></script>
+    <script src="assets/video-quizzes/assets/video-quizzes.js"></script>
+    <script src="assets/live-streaming/assets/live-streaming.js"></script>
+    <script src="assets/subscription/assets/subscription.js"></script>
+    <script src="assets/woocommerce/assets/woo.js"></script>
+    <script src="assets/css/slider/slider.js"></script>
+    <script src="assets/css/block/block.js"></script>
+    <script src="assets/block-pro/block-pro.js"></script>
+    <script src="assets/slider-pro/slider-pro.js"></script>
+
+    <script src="assets/js/js.cookie.min.js"></script>
+    <script src="assets/js/lazysizes.min.js"></script>
+    <script src="assets/js/swiper-slider/swiper-bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var beeteam368_slider_239201716900168_params = {
+                navigation: {
+                    nextEl: '.slider-button-next',
+                    prevEl: '.slider-button-prev'
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                    type: 'progressbar'
+                },
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                        spaceBetween: 20
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
+                    },
+                    1200: {
+                        slidesPerView: 3,
+                        spaceBetween: 30
+                    },
+                    1670: {
+                        slidesPerView: 4,
+                        spaceBetween: 30
+                    },
+                    2200: {
+                        slidesPerView: 5,
+                        spaceBetween: 30
+                    }
+                },
+                freeMode: {
+                    enabled: true,
+                    sticky: true
+                }
+            };
+
+            var beeteam368_slider_239201716900168 = new Swiper('#beeteam368_slider_239201716900168', beeteam368_slider_239201716900168_params);
+        });
+    </script>
+
+    </body>
+
+</html>
